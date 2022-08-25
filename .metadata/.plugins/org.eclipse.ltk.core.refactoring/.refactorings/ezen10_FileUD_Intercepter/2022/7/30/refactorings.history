@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FileDownloadController.java&apos; to &apos;ezen12_Board/src/main/java/kr.co.board.common.file&apos;&#x0D;&#x0A;- Original project: &apos;ezen10_FileUD_Intercepter&apos;&#x0D;&#x0A;- Destination element: &apos;ezen12_Board/src/main/java/kr.co.board.common.file&apos;&#x0D;&#x0A;- Original element: &apos;kr.co.fileinter.fileupdown.FileDownloadController.java&apos;" description="Copy compilation unit" destination="=ezen12_Board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.co.board.common.file" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.co.fileinter.fileupdown{FileDownloadController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1658285133969" units="1" version="1.0"/>
+</session>

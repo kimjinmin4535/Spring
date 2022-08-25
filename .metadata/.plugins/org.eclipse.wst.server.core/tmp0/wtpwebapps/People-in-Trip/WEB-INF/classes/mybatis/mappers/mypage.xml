@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="mapper.mypage">
+	<resultMap type="mypageDTO" id="mypageResult">
+		<result property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="pwd" column="pwd" />
+		<result property="nick_nm" column="nick_nm" />
+		<result property="email" column="email" />
+		<result property="join_Date" column="join_Date" />
+		<result property="last_update" column="last_update" />
+		<result property="grade" column="grade" />
+	</resultMap>
+	
+	<resultMap type="myboardDTO" id="myBoardResult">
+		<result property="post_num" column="post_num" />
+		<result property="id" column="id" />
+
+		<result property="post_cate" column="post_cate" />
+		<result property="post_title" column="post_title" />
+		<result property="post_content" column="post_content" />
+		<result property="post_date" column="post_date" />
+		<result property="visitcount" column="visitcount" />
+		<result property="count_comment" column="count_comment" />
+	</resultMap>
+	
+	<resultMap type="kr.co.intrip.tourist.dto.Tourlist_SteamedDTO" id="tsDTO">
+		<result property="steamedno" column="steamedno"/>
+		<result property="contentsid" column="contentsid"/>
+		<result property="id" column="id"/>
+		<result property="steamedcheck" column="steamedcheck"/>
+	</resultMap>
+	
+	<resultMap type="kr.co.intrip.tourist.dto.ApiDTO" id="apiDTO">
+		<result property="alltag" column="alltag"/>
+		<result property="label" column="label"/>
+		<result property="label2" column="label2"/>
+		<result property="title" column="title"/>
+		<result property="address" column="address"/>
+		<result property="tag" column="tag"/>
+		<result property="introduction" column="introduction"/>
+		<result property="imgpath" column="imgpath"/>
+		<result property="contentsid" column="contentsid"/>
+		<result property="phoneno" column="phoneno"/>
+		<result property="latitude" column="latitude"/>
+		<result property="longitude" column="longitude"/>
+		<result property="viewcount" column="viewcount"/>
+		<result property="commentcount" column="commentcount"/>
+		<result property="steamedhit" column="steamedhit"/>
+		<result property="suggestionhit" column="suggestionhit"/>
+	</resultMap>
+
+	<!-- 마이페이지 정보 조회 -->
+	<select id="selectMemberMyPage" resultMap="mypageResult">
+		<![CDATA[
+			SELECT id ,
+				   name,
+				   pwd ,
+				   nick_nm ,
+				   email
+			FROM P_MEMBER
+			WHERE id = #{id}
+		]]>
+	</select>
+	
+	<!-- 비밀번호 변경 -->
+	<select id="update_MyPage_Pw">
+		<![CDATA[
+			UPDATE P_MEMBER
+			SET PWD = #{pwd}
+			WHERE ID = #{id}
+		]]>
+	</select>
+	
+	<!-- 닉네임 변경 -->
+	<select id="update_MyPage_nick_nm">
+		<![CDATA[
+			UPDATE P_MEMBER
+			SET NICK_NM = #{nick_nm}
+			WHERE ID = #{id}
+		]]>
+	</select>
+	
+	<!-- 닉네임 검사 -->
+	<select id="selectNickChk" resultType="int">
+		<![CDATA[
+			SELECT COUNT(*)
+			FROM P_MEMBER 
+			WHERE NICK_NM = #{nick_nm}
+		]]>
+	</select>	
+	
+	<!-- 회원 탈퇴 -->
+	<delete id="deleteMember">
+		<![CDATA[
+			DELETE FROM P_MEMBER 
+			WHERE ID = #{id}
+			AND PWD = #{pwd}	
+		]]>
+	</delete>
+	
+	<!-- 내가쓴 글 수정 -->
+	
+	<!-- 내가 쓴 동행글 -->
+	<select id="listfindcompany" resultType="kr.co.intrip.board.dto.BoardDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+			select POST_NUM, POST_TITLE, POST_CONTENT, ID, POST_DATE, VISITCOUNT
+			from (
+					select POST_NUM, POST_TITLE, POST_CONTENT, ID, POST_DATE,
+					VISITCOUNT,
+			row_number() over(order by POST_NUM desc) as rNum
+			from P_BOARD
+			where id = #{id, jdbcType=VARCHAR}
+			ORDER by 1
+			) mb
+			where rNum between #{firstRow} and #{lastRow}
+			order by POST_NUM DESC
+		]]>
+	</select>
+	
+	<!-- 내가 쓴 동행글 검색어 갯수 -->
+	<select id="findlistCompanyCount" resultType="int"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+			select COUNT(*)  
+			from p_board
+			where post_num > 0
+			and id = #{id, jdbcType=VARCHAR}
+		]]>
+	</select>
+	
+	<!-- 내가 쓴 정보글 -->
+	<select id="listfindInformation" resultType="myboardDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+			select POST_NUM, POST_TITLE, POST_CONTENT, ID, POST_DATE, VISITCOUNT
+			from (
+					select POST_NUM, POST_TITLE, POST_CONTENT, ID, POST_DATE,
+					VISITCOUNT,
+			row_number() over(order by POST_NUM desc) as rNum
+			from P_BOARD1
+			where id = #{id, jdbcType=VARCHAR}
+			ORDER by 1
+			) mb
+			where rNum between #{firstRow} and #{lastRow}
+			order by POST_NUM DESC
+		]]>
+	</select>
+	
+	<!-- 내가 쓴 정보글 갯수 -->
+	<select id="findlistInfoCount" resultType="int"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+			select count(post_num)
+			from p_board1
+			where post_num > 0
+			and id = #{id, jdbcType=VARCHAR}
+		]]>
+	</select>
+	
+	
+	<sql id="Infosearch">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">and POST_TITLE LIKE '%' || #{POST_TITLE, jdbcType=VARCHAR} || '%'</if>
+		</if>
+	</sql>			
+	
+	<!-- 검색 -->
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">and POST_TITLE LIKE '%' || #{keyword} || '%'</if>
+			<if test="searchType == 'c'.toString()">and POST_CONTENT LIKE '%' || #{keyword} || '%'</if>
+			<if test="searchType == 'w'.toString()">and ID LIKE '%' || #{keyword} || '%'</if>
+		</if>
+	</sql>
+	
+	<sql id="jejusearch">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">and b.TITLE LIKE '%' || #{keyword, jdbcType=VARCHAR} || '%'</if>
+			<if test="searchType == 'c'.toString()">and b.LABEL LIKE '%' || #{keyword, jdbcType=VARCHAR} || '%'</if>
+			<if test="searchType == 'w'.toString()">and b.LABEL2 LIKE '%' || #{keyword, jdbcType=VARCHAR} || '%'</if>
+		</if>
+	</sql>
+	
+	<!-- 내가 찜한 여행지 총 개수 -->
+	<select id="getTotalSteamedCount" parameterType="kr.co.intrip.tourist.dto.PagingDTO" resultType="int">
+	<![CDATA[
+		SELECT COUNT(*)  
+		FROM TOURIST_STEAMED a 
+		INNER JOIN P_TOURIST b
+		ON a.CONTENTSID = b.CONTENTSID 
+		WHERE ID = #{id, jdbcType=VARCHAR}
+		AND b.LABEL LIKE '%관광지%' AND b.ALLTAG NOT LIKE '%전시%'
+	]]>
+	</select> 
+	
+	<!--내가 찜한 여행지 페이징 -->
+	<select id="mySteamedJeju" resultType="kr.co.intrip.tourist.dto.ApiDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+		SELECT *
+		from (
+				select a.*,
+					   row_number() over(order by b.STEAMEDNO  desc) as rNum
+				from P_TOURIST a
+				inner join TOURIST_STEAMED b
+				on a.CONTENTSID = b.CONTENTSID 
+				where b.ID = #{id, jdbcType=VARCHAR}
+				AND b.STEAMEDCHECK = 1
+				AND a.label LIKE '%관광지%' AND a.ALLTAG NOT LIKE '%전시%'
+				order by b.STEAMEDNO desc
+				) mb
+			where rNum between #{firstRow} and #{lastRow}
+		]]>
+	</select>
+	
+	<!-- 내가 찜한 제주 페스티벌 총 개수 -->
+	<select id="getTotalSteamedFestivalCount" parameterType="kr.co.intrip.tourist.dto.PagingDTO" resultType="int">
+	<![CDATA[
+		SELECT COUNT(*)  
+		FROM TOURIST_STEAMED a 
+		INNER JOIN P_TOURIST b
+		ON a.CONTENTSID = b.CONTENTSID 
+		WHERE ID = #{id, jdbcType=VARCHAR}
+		AND b.LABEL LIKE '%축제%'
+	]]>
+	</select> 
+	
+	<!--내가 찜한 제주 전시회 페이징 -->
+	<select id="mySteamedJejuExhibition" resultType="kr.co.intrip.tourist.dto.ApiDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+		SELECT *
+		from (
+				select a.*,
+					   row_number() over(order by b.STEAMEDNO  desc) as rNum
+				from P_TOURIST a
+				inner join TOURIST_STEAMED b
+				on a.CONTENTSID = b.CONTENTSID 
+				where b.ID = #{id, jdbcType=VARCHAR}
+				AND b.STEAMEDCHECK = 1
+				AND a.ALLTAG LIKE '%전시%'
+				AND a.LABEL LIKE '%관광지%'
+				order by b.STEAMEDNO desc
+				) mb
+			where rNum between #{firstRow} and #{lastRow}
+		]]>
+	</select>
+	
+	<!-- 내가 찜한 제주 전시회 총 개수 -->
+	<select id="getTotalSteamedExhibitionCount" parameterType="kr.co.intrip.tourist.dto.PagingDTO" resultType="int">
+	<![CDATA[
+		SELECT COUNT(*)  
+		FROM TOURIST_STEAMED a 
+		INNER JOIN P_TOURIST b
+		ON a.CONTENTSID = b.CONTENTSID 
+		WHERE ID = #{id, jdbcType=VARCHAR}
+		AND b.ALLTAG LIKE '%전시%' AND b.LABEL LIKE '%관광지%'
+	]]>
+	</select> 
+	
+	<!--내가 찜한 제주 페스티벌 페이징 -->
+	<select id="mySteamedJejuFestival" resultType="kr.co.intrip.tourist.dto.ApiDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		<![CDATA[
+		SELECT *
+		from (
+				select a.*,
+					   row_number() over(order by b.STEAMEDNO  desc) as rNum
+				from P_TOURIST a
+				inner join TOURIST_STEAMED b
+				on a.CONTENTSID = b.CONTENTSID 
+				where b.ID = #{id, jdbcType=VARCHAR}
+				AND b.STEAMEDCHECK = 1
+				AND a.LABEL LIKE '%축제%'
+				order by b.STEAMEDNO desc
+				) mb
+			where rNum between #{firstRow} and #{lastRow}
+		]]>
+	</select>    
+	
+	<!-- 부산 내가 찜한 여행글 총 개수 -->
+	<select id="getTotalTravelSteamedCount" parameterType="kr.co.intrip.tourist.dto.PagingDTO" resultType="int">
+		SELECT COUNT(*)  
+		FROM BUSANTOURIST_STEAMED b
+		INNER JOIN P_BUSANTOURIST a
+		ON b.UC_SEQ = a.UC_SEQ 
+		WHERE ID = #{id, jdbcType=VARCHAR}
+	</select> 
+	
+	<!-- 부산 찜한 여행글 페이징 -->
+	<select id="mySteamedBusanTravel" resultType="kr.co.intrip.tourist.dto.BusanApiDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		SELECT mb.MAIN_IMG_NORMAL, mb.PLACE, mb.UC_SEQ
+		from (
+			select a.MAIN_IMG_NORMAL, a.PLACE, a.UC_SEQ ,
+				   row_number() over(order by a.UC_SEQ   desc) as rNum
+			from P_BUSANTOURIST a
+			inner join BUSANTOURIST_STEAMED b
+			on a.UC_SEQ = b.UC_SEQ 
+			where b.ID = #{id}
+			AND b.STEAMEDCHECK = 1
+			order by b.STEAMEDNO desc
+			) mb
+			where rNum between #{firstRow} and #{lastRow}
+	</select>
+	
+	<!-- 부산 내가 찜한 체험글 총 개수 -->
+	<select id="getTotalExperienceSteamedCount" parameterType="kr.co.intrip.tourist.dto.PagingDTO" resultType="int">
+		SELECT COUNT(*)  
+		FROM BUSANEXPERIENCE_STEAMED b
+		INNER JOIN P_BUSANEXPERIENCE a
+		ON b.UC_SEQ = a.UC_SEQ  
+		WHERE ID = #{id, jdbcType=VARCHAR}
+	</select> 
+	
+	<!-- 부산 찜한 체험글 페이징 -->
+	<select id="mySteamedBusanExperience" resultType="kr.co.intrip.tourist.dto.BusanApiDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		SELECT mb.MAIN_IMG_NORMAL, mb.PLACE, mb.UC_SEQ
+		from (
+			select a.MAIN_IMG_NORMAL, a.PLACE, a.UC_SEQ ,
+				   row_number() over(order by a.UC_SEQ   desc) as rNum
+			from P_BUSANEXPERIENCE a
+			inner join BUSANEXPERIENCE_STEAMED b
+			on a.UC_SEQ = b.UC_SEQ 
+			where b.ID = #{id}
+			AND b.STEAMEDCHECK = 1
+			order by b.STEAMEDNO desc
+			) mb
+			where rNum between #{firstRow} and #{lastRow}
+	</select>
+	
+	<!-- 부산 내가 찜한 축제글 총 개수 -->
+	<select id="getTotalFestivalSteamedCount" parameterType="kr.co.intrip.tourist.dto.PagingDTO" resultType="int">
+		SELECT COUNT(*)  
+		FROM BUSANFESTIVAL_STEAMED b
+		INNER JOIN P_BUSANFESTIVAL a
+		ON b.UC_SEQ = a.UC_SEQ  
+		WHERE ID = #{id, jdbcType=VARCHAR}
+	</select> 
+	
+	<!-- 부산 찜한 축제글 페이징 -->
+	<select id="mySteamedBusanFestival" resultType="kr.co.intrip.tourist.dto.BusanApiDTO"
+		parameterType="kr.co.intrip.tourist.dto.PagingDTO">
+		SELECT mb.MAIN_IMG_NORMAL, mb.PLACE, mb.UC_SEQ
+		from (
+			select a.MAIN_IMG_NORMAL, a.PLACE, a.UC_SEQ ,
+				   row_number() over(order by a.UC_SEQ   desc) as rNum
+			from P_BUSANFESTIVAL a
+			inner join BUSANFESTIVAL_STEAMED b
+			on a.UC_SEQ = b.UC_SEQ 
+			where b.ID = #{id}
+			AND b.STEAMEDCHECK = 1
+			order by b.STEAMEDNO desc
+			) mb
+			where rNum between #{firstRow} and #{lastRow}
+	</select>
+	
+</mapper>

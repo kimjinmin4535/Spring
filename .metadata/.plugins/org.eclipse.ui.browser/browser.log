@@ -1,0 +1,222 @@
+
+7월 08, 2022 09:55:36.605 NEW SESSION
+7월 08, 2022 09:55:36.605 [20780:15868:0708/095536.604:ERROR:device_event_log_impl.cc(214)] [09:55:36.604] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 08, 2022 09:55:36.611 [20780:15868:0708/095536.611:ERROR:device_event_log_impl.cc(214)] [09:55:36.611] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 08, 2022 09:56:34.523 [20780:20196:0708/095634.523:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 08, 2022 11:36:52.270 [20780:15868:0708/113652.270:ERROR:device_event_log_impl.cc(214)] [11:36:52.269] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+7월 08, 2022 14:56:34.530 [20780:3084:0708/145634.529:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 11, 2022 09:49:13.81 NEW SESSION
+7월 11, 2022 09:49:13.81 [16944:13356:0711/094913.078:ERROR:device_event_log_impl.cc(214)] [09:49:13.079] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 11, 2022 09:49:13.91 [16944:13356:0711/094913.091:ERROR:device_event_log_impl.cc(214)] [09:49:13.092] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 11, 2022 09:50:10.747 [16944:19428:0711/095010.747:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 11, 2022 13:01:34.217 [16944:13356:0711/130134.216:ERROR:interface_endpoint_client.cc(665)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+7월 11, 2022 21:16:34.37 NEW SESSION
+7월 11, 2022 21:16:34.37 [18244:16508:0711/211634.029:ERROR:device_event_log_impl.cc(214)] [21:16:34.029] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 11, 2022 21:16:34.38 [18244:16508:0711/211634.034:ERROR:device_event_log_impl.cc(214)] [21:16:34.034] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 11, 2022 21:17:32.22 [18244:17724:0711/211732.021:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 12, 2022 01:52:35.291 NEW SESSION
+7월 12, 2022 01:52:35.291 [3168:20152:0712/015235.283:ERROR:device_event_log_impl.cc(214)] [01:52:35.283] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 12, 2022 01:52:35.294 [3168:20152:0712/015235.293:ERROR:device_event_log_impl.cc(214)] [01:52:35.293] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 12, 2022 01:53:33.282 [3168:4812:0712/015333.281:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 14, 2022 09:37:54.988 NEW SESSION
+7월 14, 2022 09:37:54.988 [21136:10080:0714/093754.984:ERROR:device_event_log_impl.cc(214)] [09:37:54.984] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 14, 2022 09:37:54.997 [21136:10080:0714/093754.997:ERROR:device_event_log_impl.cc(214)] [09:37:54.997] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 14, 2022 09:38:52.903 [21136:6912:0714/093852.902:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 15, 2022 10:03:19.976 NEW SESSION
+7월 15, 2022 10:03:19.976 [16776:5592:0715/100319.967:ERROR:device_event_log_impl.cc(214)] [10:03:19.967] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 15, 2022 10:03:19.976 [16776:5592:0715/100319.976:ERROR:device_event_log_impl.cc(214)] [10:03:19.976] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 15, 2022 10:04:17.876 [16776:8020:0715/100417.876:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 15, 2022 11:33:06.817 [3820:13012:0715/113306.817:ERROR:device_event_log_impl.cc(214)] [11:33:06.812] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 15, 2022 11:33:06.828 [3820:13012:0715/113306.828:ERROR:device_event_log_impl.cc(214)] [11:33:06.827] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+7월 15, 2022 11:34:59.227 NEW SESSION
+7월 15, 2022 11:34:59.227 [6572:1900:0715/113459.226:ERROR:device_event_log_impl.cc(214)] [11:34:59.226] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 15, 2022 11:34:59.239 [6572:1900:0715/113459.239:ERROR:device_event_log_impl.cc(214)] [11:34:59.239] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 15, 2022 11:36:57.222 [17932:9644:0715/113657.221:ERROR:device_event_log_impl.cc(214)] [11:36:57.221] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 15, 2022 11:36:57.233 [17932:9644:0715/113657.233:ERROR:device_event_log_impl.cc(214)] [11:36:57.232] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 15, 2022 11:37:55.133 [17932:1020:0715/113755.133:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 15, 2022 13:56:36.509 [17932:6584:0715/135636.508:ERROR:mcs_client.cc(756)] Received close command, resetting connection.
+7월 15, 2022 16:37:55.138 [17932:4040:0715/163755.137:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 15, 2022 16:48:36.831 NEW SESSION
+7월 15, 2022 16:48:36.831 [300:10024:0715/164836.830:ERROR:device_event_log_impl.cc(214)] [16:48:36.830] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 15, 2022 16:48:36.851 [300:10024:0715/164836.851:ERROR:device_event_log_impl.cc(214)] [16:48:36.850] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 15, 2022 16:49:34.742 [300:1284:0715/164934.742:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 15, 2022 18:18:23.492 [300:10024:0715/181823.491:ERROR:device_event_log_impl.cc(214)] [18:18:23.491] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+7월 15, 2022 23:17:45.593 NEW SESSION
+7월 15, 2022 23:17:45.593 [11064:20920:0715/231745.582:ERROR:device_event_log_impl.cc(214)] [23:17:45.581] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 15, 2022 23:17:45.600 [11064:20920:0715/231745.591:ERROR:device_event_log_impl.cc(214)] [23:17:45.590] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 15, 2022 23:18:42.701 [11064:10356:0715/231842.700:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 16, 2022 16:27:46.169 NEW SESSION
+7월 16, 2022 16:27:46.169 [9508:21600:0716/162746.158:ERROR:device_event_log_impl.cc(214)] [16:27:46.157] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 16, 2022 16:27:46.175 [9508:21600:0716/162746.171:ERROR:device_event_log_impl.cc(214)] [16:27:46.171] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+7월 20, 2022 09:28:47.406 NEW SESSION
+7월 20, 2022 09:28:47.406 [15684:9408:0720/092847.395:ERROR:device_event_log_impl.cc(214)] [09:28:47.395] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 20, 2022 09:28:47.407 [15684:9408:0720/092847.404:ERROR:device_event_log_impl.cc(214)] [09:28:47.404] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 20, 2022 09:29:45.307 [15684:23036:0720/092945.307:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 23, 2022 17:30:05.315 NEW SESSION
+7월 23, 2022 17:30:05.315 [25004:1300:0723/173005.309:ERROR:device_event_log_impl.cc(214)] [17:30:05.309] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 23, 2022 17:30:05.319 [25004:1300:0723/173005.319:ERROR:device_event_log_impl.cc(214)] [17:30:05.319] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 23, 2022 17:31:03.286 [25004:19056:0723/173103.286:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+7월 23, 2022 20:20:05.223 NEW SESSION
+7월 23, 2022 20:20:05.223 [7500:19740:0723/202005.213:ERROR:device_event_log_impl.cc(214)] [20:20:05.213] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 23, 2022 20:20:05.226 [7500:19740:0723/202005.226:ERROR:device_event_log_impl.cc(214)] [20:20:05.226] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 23, 2022 20:21:03.143 [7500:18596:0723/202103.142:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 23, 2022 21:01:34.503 [7500:15212:0723/210134.502:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+7월 23, 2022 21:01:35.08 [7500:19740:0723/210135.008:ERROR:device_event_log_impl.cc(214)] [21:01:35.008] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+7월 28, 2022 20:18:38.778 NEW SESSION
+7월 28, 2022 20:18:38.778 [7596:22824:0728/201838.777:ERROR:device_event_log_impl.cc(214)] [20:18:38.776] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+7월 28, 2022 20:18:38.787 [7596:22824:0728/201838.786:ERROR:device_event_log_impl.cc(214)] [20:18:38.786] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 28, 2022 20:19:36.680 [7596:15976:0728/201936.679:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 02, 2022 15:57:26.644 NEW SESSION
+8월 02, 2022 15:57:26.644 [18688:15444:0802/155726.643:ERROR:device_event_log_impl.cc(214)] [15:57:26.643] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 02, 2022 15:57:26.650 [18688:15444:0802/155726.650:ERROR:device_event_log_impl.cc(214)] [15:57:26.650] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 02, 2022 15:58:24.595 [18688:20196:0802/155824.595:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 03, 2022 18:24:15.723 NEW SESSION
+8월 03, 2022 18:24:15.723 [6072:13988:0803/182415.720:ERROR:device_event_log_impl.cc(214)] [18:24:15.720] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 03, 2022 18:24:15.725 [6072:13988:0803/182415.725:ERROR:device_event_log_impl.cc(214)] [18:24:15.725] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 03, 2022 18:25:13.708 [6072:10920:0803/182513.707:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 03, 2022 21:35:09.340 NEW SESSION
+8월 03, 2022 21:35:09.340 [2912:26192:0803/213509.331:ERROR:device_event_log_impl.cc(214)] [21:35:09.331] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 03, 2022 21:35:09.349 [2912:26192:0803/213509.348:ERROR:device_event_log_impl.cc(214)] [21:35:09.348] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 03, 2022 21:36:07.235 [2912:7432:0803/213607.234:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 03, 2022 22:18:40.254 NEW SESSION
+8월 03, 2022 22:18:40.254 [14248:17116:0803/221840.253:ERROR:device_event_log_impl.cc(214)] [22:18:40.253] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 03, 2022 22:18:40.259 [14248:17116:0803/221840.259:ERROR:device_event_log_impl.cc(214)] [22:18:40.258] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 03, 2022 22:19:38.176 [14248:4292:0803/221938.175:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 03, 2022 22:34:25.503 [14248:17116:0803/223425.502:ERROR:interface_endpoint_client.cc(665)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+8월 05, 2022 19:01:22.942 NEW SESSION
+8월 05, 2022 19:01:22.942 [14208:27104:0805/190122.934:ERROR:device_event_log_impl.cc(214)] [19:01:22.934] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 05, 2022 19:01:22.946 [14208:27104:0805/190122.946:ERROR:device_event_log_impl.cc(214)] [19:01:22.945] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 05, 2022 19:02:20.874 [14208:4964:0805/190220.874:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 05, 2022 19:37:25.598 [14208:27104:0805/193725.598:ERROR:interface_endpoint_client.cc(665)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+8월 05, 2022 22:32:11.461 NEW SESSION
+8월 05, 2022 22:32:11.461 [12764:7108:0805/223211.460:ERROR:device_event_log_impl.cc(214)] [22:32:11.460] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 05, 2022 22:32:11.462 [12764:7108:0805/223211.461:ERROR:device_event_log_impl.cc(214)] [22:32:11.462] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+8월 07, 2022 21:41:37.875 NEW SESSION
+8월 07, 2022 21:41:37.875 [13400:14220:0807/214137.846:ERROR:device_event_log_impl.cc(214)] [21:41:37.846] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 07, 2022 21:41:37.883 [13400:14220:0807/214137.846:ERROR:device_event_log_impl.cc(214)] [21:41:37.847] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 07, 2022 21:42:35.782 [13400:28064:0807/214235.782:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 07, 2022 21:47:10.498 NEW SESSION
+8월 07, 2022 21:47:10.498 [4588:25232:0807/214710.497:ERROR:device_event_log_impl.cc(214)] [21:47:10.497] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 07, 2022 21:47:10.498 [4588:25232:0807/214710.497:ERROR:device_event_log_impl.cc(214)] [21:47:10.497] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 07, 2022 21:47:43.922 [12432:13448:0807/214743.921:ERROR:device_event_log_impl.cc(214)] [21:47:43.921] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 07, 2022 21:47:43.922 [12432:13448:0807/214743.922:ERROR:device_event_log_impl.cc(214)] [21:47:43.918] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 07, 2022 21:48:41.891 [12432:18292:0807/214841.891:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 07, 2022 22:59:17.462 [12432:9356:0807/225917.461:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 07, 2022 22:59:17.910 [12432:13448:0807/225917.910:ERROR:device_event_log_impl.cc(214)] [22:59:17.910] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+8월 08, 2022 01:11:12.154 NEW SESSION
+8월 08, 2022 01:11:12.155 [25204:28884:0808/011112.151:ERROR:device_event_log_impl.cc(214)] [01:11:12.151] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 08, 2022 01:11:12.155 [25204:28884:0808/011112.155:ERROR:device_event_log_impl.cc(214)] [01:11:12.155] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 08, 2022 01:12:10.67 [25204:4944:0808/011210.067:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 08, 2022 18:07:08.799 NEW SESSION
+8월 08, 2022 18:07:08.799 [2700:22172:0808/180708.792:ERROR:device_event_log_impl.cc(214)] [18:07:08.793] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 08, 2022 18:07:08.809 [2700:22172:0808/180708.793:ERROR:device_event_log_impl.cc(214)] [18:07:08.793] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 08, 2022 18:08:06.707 [2700:16776:0808/180806.707:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 08, 2022 19:49:51.39 NEW SESSION
+8월 08, 2022 19:49:51.39 [13760:14420:0808/194951.033:ERROR:device_event_log_impl.cc(214)] [19:49:51.033] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 08, 2022 19:49:51.48 [13760:14420:0808/194951.040:ERROR:device_event_log_impl.cc(214)] [19:49:51.040] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 08, 2022 19:50:49.30 [13760:22396:0808/195049.022:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 08, 2022 21:46:49.844 [13760:14420:0808/214649.843:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 08, 2022 23:20:50.448 [13760:13296:0808/232050.447:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 08, 2022 23:20:50.950 [13760:14420:0808/232050.949:ERROR:device_event_log_impl.cc(214)] [23:20:50.949] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+8월 08, 2022 23:53:39.477 [13760:13296:0808/235339.476:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+
+8월 10, 2022 15:24:25.280 NEW SESSION
+8월 10, 2022 15:24:25.280 [7196:14912:0810/152425.278:ERROR:device_event_log_impl.cc(214)] [15:24:25.277] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 10, 2022 15:24:25.281 [7196:14912:0810/152425.281:ERROR:device_event_log_impl.cc(214)] [15:24:25.280] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 10, 2022 15:25:23.169 [7196:8656:0810/152523.169:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 10, 2022 21:22:25.973 NEW SESSION
+8월 10, 2022 21:22:25.973 [4492:4020:0810/212225.966:ERROR:device_event_log_impl.cc(214)] [21:22:25.966] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 10, 2022 21:22:25.974 [4492:4020:0810/212225.969:ERROR:device_event_log_impl.cc(214)] [21:22:25.969] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 10, 2022 21:23:23.881 [4492:21324:0810/212323.880:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 11, 2022 15:26:39.798 NEW SESSION
+8월 11, 2022 15:26:39.798 [19028:15392:0811/152639.787:ERROR:device_event_log_impl.cc(214)] [15:26:39.787] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 11, 2022 15:26:39.799 [19028:15392:0811/152639.799:ERROR:device_event_log_impl.cc(214)] [15:26:39.799] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 11, 2022 15:27:36.464 [19028:4928:0811/152736.463:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 11, 2022 22:18:16.893 NEW SESSION
+8월 11, 2022 22:18:16.893 [4588:17888:0811/221816.884:ERROR:device_event_log_impl.cc(214)] [22:18:16.884] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 11, 2022 22:18:16.896 [4588:17888:0811/221816.895:ERROR:device_event_log_impl.cc(214)] [22:18:16.895] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 11, 2022 22:19:14.751 [4588:6232:0811/221914.750:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 11, 2022 23:58:37.55 [4588:17888:0811/235837.054:ERROR:device_event_log_impl.cc(214)] [23:58:37.054] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+8월 13, 2022 19:51:22.713 NEW SESSION
+8월 13, 2022 19:51:22.714 [19548:14192:0813/195122.706:ERROR:device_event_log_impl.cc(214)] [19:51:22.706] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 13, 2022 19:51:22.721 [19548:14192:0813/195122.714:ERROR:device_event_log_impl.cc(214)] [19:51:22.714] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 13, 2022 19:52:20.556 [19548:11612:0813/195220.555:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 13, 2022 19:56:52.598 [16636:19768:0813/195652.598:ERROR:device_event_log_impl.cc(214)] [19:56:52.598] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 13, 2022 19:56:52.612 [16636:19768:0813/195652.611:ERROR:device_event_log_impl.cc(214)] [19:56:52.612] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 13, 2022 19:57:49.792 [16636:8976:0813/195749.792:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 14, 2022 22:10:31.778 NEW SESSION
+8월 14, 2022 22:10:31.778 [14608:10132:0814/221031.772:ERROR:device_event_log_impl.cc(214)] [22:10:31.771] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 14, 2022 22:10:31.785 [14608:10132:0814/221031.776:ERROR:device_event_log_impl.cc(214)] [22:10:31.775] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 14, 2022 22:11:44.577 [8728:12944:0814/221144.577:ERROR:device_event_log_impl.cc(214)] [22:11:44.576] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 14, 2022 22:11:44.578 [8728:12944:0814/221144.578:ERROR:device_event_log_impl.cc(214)] [22:11:44.577] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 14, 2022 22:13:14.947 [12424:18620:0814/221314.947:ERROR:device_event_log_impl.cc(214)] [22:13:14.946] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 14, 2022 22:13:14.947 [12424:18620:0814/221314.947:ERROR:device_event_log_impl.cc(214)] [22:13:14.947] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 14, 2022 22:14:12.857 [12424:14440:0814/221412.856:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 15, 2022 16:02:38.761 NEW SESSION
+8월 15, 2022 16:02:38.761 [8132:10476:0815/160238.755:ERROR:device_event_log_impl.cc(214)] [16:02:38.754] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 15, 2022 16:02:38.768 [8132:10476:0815/160238.761:ERROR:device_event_log_impl.cc(214)] [16:02:38.762] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 15, 2022 16:03:36.654 [8132:15188:0815/160336.653:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+8월 17, 2022 16:24:17.204 NEW SESSION
+8월 17, 2022 16:24:17.204 [14516:19780:0817/162417.202:ERROR:device_event_log_impl.cc(214)] [16:24:17.201] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 17, 2022 16:24:17.205 [14516:19780:0817/162417.204:ERROR:device_event_log_impl.cc(214)] [16:24:17.204] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 17, 2022 16:25:15.118 [14516:14284:0817/162515.117:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 17, 2022 18:51:50.315 [14516:19780:0817/185150.315:ERROR:device_event_log_impl.cc(214)] [18:51:50.314] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+8월 18, 2022 18:51:23.454 NEW SESSION
+8월 18, 2022 18:51:23.454 [11644:19544:0818/185123.443:ERROR:device_event_log_impl.cc(214)] [18:51:23.443] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 18, 2022 18:51:23.455 [11644:19544:0818/185123.455:ERROR:device_event_log_impl.cc(214)] [18:51:23.455] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 18, 2022 18:52:21.371 [11644:7248:0818/185221.371:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 18, 2022 23:33:09.963 [11644:19544:0818/233309.963:ERROR:device_event_log_impl.cc(214)] [23:33:09.962] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+8월 18, 2022 23:52:20.109 [11644:3972:0818/235220.109:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 19, 2022 01:00:59.409 [11644:19544:0819/010059.408:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:01:07.139 [11644:19544:0819/010107.139:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:01:36.796 [11644:19544:0819/010136.795:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:01:54.641 [11644:19544:0819/010154.641:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:03:14.176 [11644:19544:0819/010314.176:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:03:46.547 [11644:19544:0819/010346.546:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:05:12.361 [11644:19544:0819/010512.361:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2022 01:09:55.611 [11644:19544:0819/010955.610:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+8월 20, 2022 14:26:43.926 NEW SESSION
+8월 20, 2022 14:26:43.926 [17532:11172:0820/142643.925:ERROR:device_event_log_impl.cc(214)] [14:26:43.925] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 20, 2022 14:26:43.930 [17532:11172:0820/142643.929:ERROR:device_event_log_impl.cc(214)] [14:26:43.929] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 20, 2022 14:27:41.806 [17532:22652:0820/142741.806:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 20, 2022 17:25:36.765 [17532:11172:0820/172536.765:ERROR:device_event_log_impl.cc(214)] [17:25:36.765] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+8월 20, 2022 19:27:38.785 [17532:11884:0820/192738.784:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+8월 20, 2022 22:52:59.532 [17532:1492:0820/225259.531:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+
+8월 21, 2022 02:26:59.12 NEW SESSION
+8월 21, 2022 02:26:59.12 [17676:7680:0821/022659.006:ERROR:device_event_log_impl.cc(214)] [02:26:59.005] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 지정된 파일을 찾을 수 없습니다. (0x2)
+8월 21, 2022 02:26:59.26 [17676:7680:0821/022659.026:ERROR:device_event_log_impl.cc(214)] [02:26:59.025] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+8월 21, 2022 02:27:56.915 [17676:2312:0821/022756.915:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

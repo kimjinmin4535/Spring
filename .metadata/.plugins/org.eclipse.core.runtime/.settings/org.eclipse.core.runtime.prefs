@@ -1,0 +1,17 @@
+content-types/org.dadacoalition.yedit.yamlsource/charset=utf-8
+content-types/org.eclipse.buildship.core.files.gradlebuildscript/charset=utf-8
+content-types/org.eclipse.compare.wordDoc/charset=utf-8
+content-types/org.eclipse.core.runtime.text/charset=utf-8
+content-types/org.eclipse.egit.patch/charset=utf-8
+content-types/org.eclipse.emf.codegen.jet/charset=utf-8
+content-types/org.eclipse.jdt.core.javaClass/charset=utf-8
+content-types/org.eclipse.jdt.core.javaProperties/charset=utf-8
+content-types/org.eclipse.jdt.core.javaSource/charset=utf-8
+content-types/org.eclipse.jst.jsp.core.jspsource/charset=utf-8
+content-types/org.eclipse.mylyn.wikitext/charset=utf-8
+content-types/org.eclipse.team.genericeditor.diff.extension.patch/charset=utf-8
+content-types/org.eclipse.ui.views.log.log/charset=utf-8
+content-types/org.eclipse.wst.css.core.csssource/charset=utf-8
+content-types/org.eclipse.wst.html.core.htmlsource/charset=utf-8
+content-types/org.eclipse.wst.json.core.jsonsource/charset=utf-8
+eclipse.preferences.version=1

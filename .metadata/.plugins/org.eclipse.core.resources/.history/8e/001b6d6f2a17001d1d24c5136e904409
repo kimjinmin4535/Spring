@@ -1,0 +1,39 @@
+package kr.co.intrip.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import kr.co.intrip.board.dto.likeDTO;
+import kr.co.intrip.board.service.likeService;
+
+
+
+@Controller
+public class likeController {
+
+	@Autowired
+	private likeService likeService; 
+	
+	
+	public void like(Model model) {
+		likeDTO likeDTO = new likeDTO();
+		likeDTO.setl_NUM(l_NUM);
+		likeDTO.setl_id(l_id());
+		
+		int ltlike = 0;
+		
+		int check = likeService.ltlikecount(likeDTO);
+		
+		if(check ==0) {
+			
+			likeService.likeinsert(likeDTO);
+			
+		}else if(check==1) {
+			
+			ltlike = likeService.ltlikegetinfo(likeDTO);
+		}
+		
+		model.addAttribute("ltlike",ltlike);
+	}
+}
